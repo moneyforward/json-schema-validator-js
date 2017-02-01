@@ -6,7 +6,14 @@
   "repository": "git@github.com:moneyforward/json-schema-validator-js.git",
   "author": "osuga.hiroshi",
   "license": "MIT",
+  "scripts": {
+    "test": "ava"
+  },
   "dependencies": {
     "ajv": "^4.11.2"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "sinon": "^1.17.7"
   }
 }
