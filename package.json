@@ -1,6 +1,6 @@
 {
   "name": "json-schema-validator-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "shorhand to check json schema with debugging information",
   "main": "index.js",
   "repository": "git@github.com:moneyforward/json-schema-validator-js.git",
