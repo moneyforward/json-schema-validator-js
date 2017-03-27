@@ -1,12 +1,12 @@
-const AJV = require('ajv');
+var AJV = require('ajv');
 
 /**
  * @param {object} schema is an object represented json schema
  * @return {Function}
  */
 function create (schema) {
-  const ajv = new AJV();
-  const isValid = ajv.compile(schema);
+  var ajv = new AJV();
+  var isValid = ajv.compile(schema);
 
   /**
    * validation and output debbuging information
@@ -14,13 +14,13 @@ function create (schema) {
    * @return {boolean} valid or not
    */
   return function (obj) {
-    const result = isValid(obj);
+    var result = isValid(obj);
 
     if (!result) {
       /* eslint-disable no-console */
       console.log(obj);
       isValid.errors.map( function (error) {
-        const message = error.dataPath + ' ' + error.message;
+        var message = error.dataPath + ' ' + error.message;
         console.log(message);
         return message;
       });
