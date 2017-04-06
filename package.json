@@ -10,7 +10,7 @@
     "test": "ava"
   },
   "dependencies": {
-    "ajv": "^4.11.2"
+    "ajv": "^5.0.3-beta"
   },
   "devDependencies": {
     "ava": "^0.17.0",
