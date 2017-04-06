@@ -11,12 +11,12 @@
     "lint": "$(npm bin)/eslint --config .eslintrc.yml --ext .js --ext .jsx index.js test"
   },
   "dependencies": {
-    "ajv": "^5.0.3-beta",
-    "eslint": "^3.19.0",
-    "eslint-plugin-react": "^6.10.3"
+    "ajv": "^5.0.3-beta"
   },
   "devDependencies": {
     "ava": "^0.17.0",
+    "eslint": "^3.19.0",
+    "eslint-plugin-react": "^6.10.3",
     "sinon": "^1.17.7"
   }
 }
