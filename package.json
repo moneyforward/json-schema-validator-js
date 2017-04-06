@@ -7,10 +7,13 @@
   "author": "osuga.hiroshi",
   "license": "MIT",
   "scripts": {
-    "test": "ava"
+    "test": "$(npm bin)/ava",
+    "lint": "$(npm bin)/eslint --config .eslintrc.yml --ext .js --ext .jsx index.js test"
   },
   "dependencies": {
-    "ajv": "^5.0.3-beta"
+    "ajv": "^5.0.3-beta",
+    "eslint": "^3.19.0",
+    "eslint-plugin-react": "^6.10.3"
   },
   "devDependencies": {
     "ava": "^0.17.0",
