@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 const test = require('ava');
 const sinon = require('sinon');
-const validator = require('../src');
+const validator = require('..');
 
 test.beforeEach( () => {
   sinon.stub(console, 'log').returns(void 0);
